@@ -1,18 +1,8 @@
 
 
 def main():
-    # get book text"
-    print ("type the book name:")
-    try:
 
-        book_path = "books/" + input() + ".txt"
-    except EOFError:
-        print (f"please enter a book name")
-    except FileNotFoundError:
-        print (f"this filename is not found: {book_path}")
-
-    # book_path = "/home/residentia/workspace/text.txt"
-
+    book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     # get number of words, print out
     word_count = get_word_count(text)
